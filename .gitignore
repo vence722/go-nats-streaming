@@ -26,3 +26,5 @@ _testmain.go
 # Eclipse stuff
 .project
 .settings/
+
+.idea

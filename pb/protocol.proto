@@ -34,6 +34,7 @@ message PubMsg {
   bytes  connID   = 6;  // Connection ID. For servers that know about this field, clientID can be omitted
 
   bytes  sha256  = 10; // optional sha256 of data
+  string topic   = 11; // hack
 }
 
 // Used to ACK to publishers
@@ -53,6 +54,7 @@ message MsgProto {
   bool   redelivered = 6;  // Flag specifying if the message is being redelivered
 
   uint32 CRC32       = 10; // optional IEEE CRC32
+  string topic       = 11; // hack
 }
 
 // Ack will deliver an ack for a delivered msg.
